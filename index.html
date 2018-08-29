@@ -5,9 +5,11 @@
     <meta charset="utf-8">
 
         <script>
-          alert("Hello, World!")
-        </script>
-        
+          const daysOfTheWeek = ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag" ];
+          let now = new Date();
+          let dayName = daysOfTheWeek[now.getDay()];
+          alert('Hello, World! Happy ${dayName}.');
+
   </head>
   <body>
     <h1>Hello, world!</h1>
