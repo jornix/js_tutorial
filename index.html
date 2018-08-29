@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Learn Enough JavaScript</title>
-    <meta charset="utf-8">
+<head>
+  <title>Learn Enough JavaScript</title>
+  <meta charset="utf-8">
 
-        <script>
-          const daysOfTheWeek = ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag" ];
-          let now = new Date();
-          let dayName = daysOfTheWeek[now.getDay()];
+  <script>
+  function dayName(date) {
+    const daysOfTheWeek = ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag" ];
+    return daysOfTheWeek[now.getDay()];
+  }
 
-          alert(`Hello, World! Happy ${dayName}.`);
-        </script>
+  let now = new Date();
+  alert(`Hello, World! Happy ${dayName(now)}.`);
+  </script>
 
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>This page includes an alert written in JavaScript.</p>
+</head>
+<body>
+  <h1>Hello, world!</h1>
+  <p>This page includes an alert written in JavaScript.</p>
 
-  </body>
+</body>
 </html>
